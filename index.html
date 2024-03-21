@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Приклади списків</title>
+<style>
+    /* Стилізація для списку маркованих з різними маркерами та зображеннями */
+    .custom-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .custom-list li {
+        margin-bottom: 10px;
+    }
+    .circle-marker {
+        width: 20px;
+        height: 20px;
+        background-color: #f00;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .square-marker {
+        width: 20px;
+        height: 20px;
+        background-color: #00f;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    /* Стилізація для нумерованих списків із різною нумерацією */
+    .custom-numbered-list {
+        list-style-type: decimal;
+    }
+    .lower-alpha-list {
+        list-style-type: lower-alpha;
+    }
+
+    /* Стилізація для багаторівневих списків */
+    .multi-level-list {
+        list-style-type: none;
+    }
+    .multi-level-list li {
+        margin-bottom: 5px;
+    }
+    .sub-list {
+        margin-left: 20px;
+    }
+
+    /* Стилізація для списків визначень */
+    .definition-list {
+        padding-left: 0;
+    }
+    .definition-list dt {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<!-- Маркований список з різними маркерами та зображеннями -->
+<h2>Маркований список з різними маркерами та зображеннями:</h2>
+<ul class="custom-list">
+    <li><span class="circle-marker"></span>Червоний</li>
+    <li><span class="square-marker"></span>Блакиний</li>
+    <li><img src="image/test.png" alt="Image"> Картинка 3</li>
+</ul>
+
+<!-- Нумерований список із різною нумерацією -->
+<h2>Нумерований список із різною нумерацією:</h2>
+<ol class="custom-numbered-list">
+    <li>Іван</li>
+    <li>Семен</li>
+    <li>Василь</li>
+</ol>
+<ol class="lower-alpha-list">
+    <li>Хліб</li>
+    <li>Чай</li>
+    <li>Молоко</li>
+</ol>
+
+<!-- Багаторівневий список -->
+<h2>Багаторівневий список:</h2>
+<ul class="multi-level-list">
+    <li>Рис
+        <ul class="sub-list">
+            <li>Цукерки</li>
+            <li>Морозиво</li>
+        </ul>
+    </li>
+    <li>Персики</li>
+</ul>
+
+<!-- Список визначень -->
+<h2>Список визначень:</h2>
+<dl class="definition-list">
+    <dt>HTML</dt>
+    <dd>Ми вивчаємо html</dd>
+    <dt>CSS</dt>
+    <dd>Ми вивчаємо css</dd>
+</dl>
+
+</body>
+</html>
